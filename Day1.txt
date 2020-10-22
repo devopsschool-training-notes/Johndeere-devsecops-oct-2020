@@ -394,7 +394,140 @@ venkata narayana padamati	65.0.17.114
 	35.154.49.48
 
 
-centos
+user name - centos
 PPK 
 https://www.devopsschool.com/notes/docker/2019/
 rajesh-mumbai.ppk
+=====================================================
+Questions
+=====================================
+1. ps -eaf
+==================
+ps - 
+ps -eaf 
+
+2. 
+==========================================================================================
+=====================================JENKINS==============================================
+==========================================================================================
+What is DevOps?
+	If you CODE for the product?
+	If you code for the testing a product
+	If you code for infra for Ops
+	---------------------------------
+	DEVOPS	
+
+What is jenkins?
+==============================
+	CI tool.
+	Release
+		Jenkins 	- Comminity [ PART OF THE SESSION]
+		Jenkins Enterprise - Paid
+		Jenkins X - Free for containers
+		Blue Ocean - For pipeline
+	Written Java
+		Plat ind
+	Powered by 1000s plugins.
+			plugins means feature
+	
+		
+		
+
+What is CI
+	Continous Integration
+	--------------------------
+	IN 
+	Software Dev Life Cycle
+
+	Auto Build + Auto Test
+	======================
+	     Imm Feedback
+
+https://www.devopsschool.com/path/
+
+PLAN -> CODE -> CodeReview -> Build -> UT -> Package -> Archive -> Deploy -> AT -> Coverage
+===========================================================================================
+JIRA -> GIT   -> SonarQube -> Maven  -> Junit -> Jar -> Artifactory -> Ansible -> Selen -> Jacoco
+
+							ALL Pass - Release
+							Failed - Repeat
+
+=================================================?????=================================================
+					Integration of ALL TOOLS	
+					Integration of ALL TEAMS
+					Integration of ALL SDLC Phases	
+					Imm Feedback for everything
+					Scheduling of Batch work
+					Dashboard Rich one for the team		
+=====================================================================
+					JENKINS
+
+Other tools
+====================
+Jenkins - uBuild - Teamcity - TFSOnline - Circle
+https://www.devopsschool.com/top10tools/
+============================================================
+How to install it?
+3.7.73.88
+https://www.devopsschool.com/tutorial/jenkins/jenkins-installation-and-configuration.html
+
+    1  clear
+    2  yum install java-1.8.0-openjdk-devel
+    3  clear
+    4  java
+    5  clear
+    6  java --version
+    7  java -version
+    8  history
+[root@ip-172-31-8-247 centos]#
+========================================================
+Architecuture of jenkins
+=========================================================
+Jenkins Server
+	===================
+	WEB			8080	-- Used by Human
+	BUild Node		RANDOM	-- Used by Server
+						-- WORKER
+					-- You can add more build node
+https://www.devopsschool.com/blog/jenkins-architecture-explained/
+======================================================================
+http://3.7.73.88:8080/
+devops
+devops123
+==============================================================================
+==============================================================================
+Secret Formula
+============================================
+1. What is your language?
+		JAVA		Which version ??
+		DOTNET		Which version ??
+		PHP		Which version ??
+		RUBY		Which version ??
+		PYTHON		Which version ??
+
+2. What is your source code?
+		git	URL - ACCESS - BRANCH 
+		snv
+		p4
+		cc
+
+3. What is your Builder?
+		maven
+		msbuild
+4. How often this job to be triggered?
+		every 15mins
+
+5. Where do you want to send a feedback?
+		rajesh@devopsschool.com
+========================================================================
+1. What is your language?		JAVA - JDK 8 ----YES
+2. What is your source code?		https://github.com/devops-school/helloworld-java-maven	
+3. What is your Builder?		maven
+			-----------------------------------------------------
+			Build 		UT 		Package		   Archive
+		Goal 	compile		test		package		   deploy
+4. How often this job to be triggered?
+		every 15 mins
+5. Where do you want to send a feedback?
+		rajesh@devopsschool.com
+
