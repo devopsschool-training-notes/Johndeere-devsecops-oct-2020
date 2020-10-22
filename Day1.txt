@@ -1,0 +1,378 @@
+1 234567890
+https://www.devopsschool.com/videos
+===================================
+Rajesh Kumar
+===================================
+DevSecOps
+===================================
+DevOps
++ Security
+====================================
+Docker 
+jenkins
+Testing
+Security
+====================================
+Demo  - Lab - AWS
+==================================
+9:30 AM - 5:30 PM IST
+==============================
+2 BREAK - 15 mins
+	=================
+	11 PM
+	3:30 PM
+Lunch - 1 Hour 
+	1 - 2 PM
+=========================================
+8105843520
+=========================================
+Qa
+
+===============================DOCKER=================================
+https://www.devopsschool.com/blog/
+======================================================================
+What is Docker?
+-------------------
+	Container mgmt tool
+	-------------------
+	Release
+		CE - FREE
+		EE - PAID
+	Written Golang
+	By Soloman Hykes
+	
+
+tool
+	Saving time	
+	Saving cost
+	Imp Quality
+	================
+	For what?
+		RUNING APPS
+				with Container
+What is Container?
+------------------------------------------
+Container is (app runtime) running your app cheaper - faster - better.
+
+Container is a init USER NS 
+			with one 
+				MNT  NS
+				PID  NS
+				NET NS
+==============================BASIC==================================
+How a APPS can run in OS?
+or
+What are the components needed to run any APP in OS?
+or
+What are the dependency for app to run in OS?
+======================================================================
+OS
+	KERNAL
+		Namespace 
+			USER NS - Create USER isolation	=========== Need ONE but can create MANY
+			MNT  NS - Create a file systems =========== Need ONE but can create MAX ONE
+			PID  NS	- Create Process TREE  ============ Need ONE but can create MAX ONE
+			NET NS - Create Network =================== Need ONE but can create MAX ONE
+
+			CGROUPS	- Manage CPU and RAM to app.
+			Cababilites - who is root and non-root
+======================================================================
+HISTORY OF COMPUTING
+=======================================================================
+1990s			INTERNET	
+=======================================================================
+PHYSCIAL SERVER			VIRTUAL MACHINE			Container
+==============================================================================
+Docker Architecture?
+===============================
+HUMAN  --> Docker Client ----REST--> Docker Deamon(Server) ----> ContainerD ---> Kernal
+           ================================================
+				Docker Engine
+
+TYPES OF file system(s)
+------------------------------------
+contains files/directory for SPECIFIC purpose.
+
+BOOTFS  AKA KERNAL lib
+ROOTFS
+USERFS
+APPFS
+
+Docker Components
+========================================
+Docker Engine
+
+Docker Image
+	Collection of filesystem(s)
+
+	Contains
+		ROOTFS + USERFS + APPFS
+		------------------------------
+		ubuntu + apache-user + apachefile
+
+		ROOTFS + USERFS + APPFS
+		------------------------------
+		ubuntu + tomcat-user + javafile + tomcat + war(apps)
+
+	Whatever you have image - You get in container
+	One Image - you can get MANY COntainers
+
+	One copy of image get mounted in the container
+
+Docker Registry
+		has multiple repos
+			repos has file-systems(s)
+			of DOCKER IMAGE
+		Contains Docker image
+		or
+		your APPS.
+
+		PUB
+			hub.docker.com [ DEFAULT ]
+		PVT	
+			artifactory
+Docker Container
+		WE run image - we get container.
+========================================
+
+How to install Docker?
+==============================================
+13.235.94.47
+DOCKER NEED ROOT or SUDO or A USER NEED TO BE PART OF a GROUP CALLED "Docker"
+https://www.devopsschool.com/tutorial/docker/install-config/docker-install-commuityedition-centos-rhel.html
+
+RAJESH
+-----------------
+BORN --> KID --> TEEN --> YOUNG -> MID - OLD -> DIE
+
+========================
+vms LifeCycle
+========================
+create -> start -> stop -> start -> restart -> pauase -> unpause --> kill -> remove
+
+========================
+Container LifeCycle
+========================
+create -> start -> stop -> start -> restart -> pauase -> unpause --> kill -> remove
+
+ 5  docker info
+    6  clear
+    7  docker version
+    8  clwear
+    9  clear
+   10  docker help
+   11  clear
+   12  docker info
+   13  clear
+   14  history
+  15  clear
+   16  docker images
+   17  docker info
+   18  clear
+   19  docker images
+   20  docker images
+   21  docker pull jenkins
+   22  clear
+   23  ls
+   24  docker images
+   25  docker ps
+   26  docker ps -a
+   27  docker create jenkins
+   28  docker ps
+   29  docker ps -a
+   30  docker start 3c43a9e53df2
+   31  docker ps -a
+   32  docker ps
+   33  docker create jenkins
+   34  docker create jenkins
+   35  docker create jenkins
+   36  docker create jenkins
+   37  docker create jenkins
+   38  docker ps -a
+   39  docker start 5a35c25f3fc7 a4180f0a4dc8 b9986933beda
+   40  docker ps
+   41  clear
+   42  ls
+   43  docker ps -a
+   44  docker stop 5a35c25f3fc7 a4180f0a4dc8
+   45  clear
+   46  docker ps
+   47  docker ps -a
+   48  docker start 5a35c25f3fc7 a4180f0a4dc8
+   49  docker ps -a
+   50  docker restart 3c43a9e53df2
+   51  docker ps -a
+   52  clear
+   53  docker ps
+   54  docker pause 5a35c25f3fc7 a4180f0a4dc8
+   55  docker ps
+   56  docker unpause 5a35c25f3fc7 a4180f0a4dc8
+   57  docker ps
+   58  clear
+   59  docker ps
+   60  docker kill 5a35c25f3fc7 a4180f0a4dc8 b9986933beda 3c43a9e53df2
+   61  docker ps
+   62  docker ps -a
+   63  docker start 5a35c25f3fc7 a4180f0a4dc8 b9986933beda 3c43a9e53df2
+   64  docker ps -a
+   65  docker ps -a
+   66  docker kill 5a35c25f3fc7 a4180f0a4dc8 b9986933beda 3c43a9e53df2
+   67  docker ps -a
+   68  docker rm 5a35c25f3fc7 a4180f0a4dc8 b9986933beda 3c43a9e53df2
+   69  docker ps -a
+   70  history
+
+PID 1
+=======================================================================================================		
+Physcial Server		Virual Server		Container
+is running		is running		is running	
+coz of 			coz of 			coz of
+PID 1 			PID 1			PID 1
+is running		is running		is running
+
+PID 1 systemd		PID 1 systemd		PID 1 ANYTHING
+						- java
+						- perl
+						- bash command
+						- ps
+						- ruby
+						- x
+						= y
+						- z
+
+						if ANYTHING is running 
+						cont is running
+=========================================================================================
+
+How to run anything(executable) IN the CONTAINER or INSIDE CONTAINER?
+- exec
+
+  18  docker exec 390ac32d4b60 ls
+   19  clear
+   20  docker exec 390ac32d4b60 ps
+   21  docker exec 390ac32d4b60 ps -eaf
+   22  docker exec 390ac32d4b60 ls /opt
+   23  docker exec 390ac32d4b60 ls /tmp
+   24  docker exec 390ac32d4b60 ls /
+   25  docker exec 390ac32d4b60 df -kh
+   26  clear
+   27  docker exec 390ac32d4b60 git
+   28  cleatr
+   29  clear
+   30  git
+   31  docker exec 390ac32d4b60 git
+   32  clear
+   33  docker exec 390ac32d4b60 git
+   34  clear
+   35  docker exec 390ac32d4b60 ghfj
+ 
+How to use container?
+==================================
+Go Inside of the container
+	= Linux == bash
+	= Windows == ps
+
+exec
+	it execute an executable inside a container
+	but
+	HUMAN can interact with container with -it and shell
+
+    3  docker ps
+    4  docker exec -it 121a5bc19121 /bin/bash
+    5  docker ps
+    6  clear
+    7  clear
+    8  docker exec -it 121a5bc19121 /bin/bash
+
+attach
+	it attached to PID 1 process
+
+Access from OUTSIDE
+	= IP Addd
+
+
+   21  docker start 390ac32d4b60
+   22  docker attach 390ac32d4b60
+   23  docker ps
+   24  clear
+   25  docker ps
+   26  docker start 390ac32d4b60
+   27  docker ps
+   28  docker inspect 390ac32d4b60
+   29  docker inspect 390ac32d4b60 |grep -i ip
+   30  clear
+   31  docker inspect 390ac32d4b60 |grep -i ip
+   32  ping 172.17.0.2
+   33  curl http://172.17.0.2:8080
+================================================
+RUN
+===================================================
+Pull + create + Start + ATTACHED TO Container
+
+================================================
+RUN -d
+===================================================
+Pull + create + Start + DO NOT ATTACHED TO Container
+
+   39  clear
+   40  ls
+   41  docker ps
+   42  docker run -d jenkins
+   43  docker ps
+   44  docker run -d jenkins
+   45  docker ps
+   46  history
+
+
+
+docker run -d -p 8080:8080 jenkins
+docker run -d -p 8090:8080 jenkins
+   40  ls
+   41  docker ps
+   42  docker run -d jenkins
+   43  docker ps
+   44  docker run -d jenkins
+   45  docker ps
+   46  history
+   47  clear
+   48  docker run -d -p 8080:8080 jenkins
+   49  docker run -d -p 8090:8080 jenkins
+   50  docker ps
+   51  clear
+   52  docker ps
+   53  history
+[root@ip-172-31-19-125 centos]#
+
+
+Called
+	DEVOPS
+================================================	
+	Saving time	
+	Saving cost
+	Imp Quality
+	================
+
+
+Qs
+STOP vs KILL
+PAUSE VS unPause
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
