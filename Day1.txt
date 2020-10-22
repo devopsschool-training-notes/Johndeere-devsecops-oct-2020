@@ -358,21 +358,43 @@ STOP vs KILL
 PAUSE VS unPause
 
 
+https://docs.google.com/forms/d/e/1FAIpQLSeX3Crw3t9IRcHtcJb4u19dTnmm9GYJBqUDS0-rruMs43HXlQ/viewform
 
 
 
+===========================================
+Nisha Lohani	65.0.76.245
+Ashish Kumar Satpute	15.207.108.233
+Namrata Shakya	35.154.13.198
+Vaibhav Pradhan	13.232.22.133
+Rahul Bhotmange	13.234.37.235
+Abhishek Paul	13.233.161.40
+EV Krishnaji Chinta	13.235.248.13
+Abhijeet Gudge	13.127.0.183
+Kamil Priya	13.233.184.243
+santosh Dubey	13.232.79.183
+Payal Mittal	15.206.116.126
+Mohd Irshad Sahad	15.206.173.195
+Tejaswi Chandak	65.0.72.51
+RAHUL DHAWAN	13.232.47.178
+Uday Gumasta	13.235.45.14
+Rachit Shah	13.235.128.171
+Subodh V	65.0.102.1
+Swapnil Golegaonkar	65.0.132.204
+Akanksha Bhardwaj	65.0.133.168
+Akansha Verma	13.234.112.208
+Snehal Sonje	13.233.172.209
+Mohit Lotlikar	65.0.94.96
+Manan Awasthi	15.206.123.80
+Tarun Soni	13.235.244.95
+Varun Kumar	13.233.216.39
+Sonu Kumar Singh Kushwaha	13.233.2.93
+Kamuju Kavya Sree	13.127.180.67
+venkata narayana padamati	65.0.17.114
+	35.154.49.48
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+centos
+PPK 
+https://www.devopsschool.com/notes/docker/2019/
+rajesh-mumbai.ppk
