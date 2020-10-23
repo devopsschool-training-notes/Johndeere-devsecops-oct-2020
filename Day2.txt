@@ -1,0 +1,54 @@
+http://3.7.55.32:8080/
+devops
+devops123
+https://www.devopsschool.com/tutorial/jenkins/
+=================================================
+					Integration of ALL TOOLS	
+					Integration of ALL TEAMS
+					Integration of ALL SDLC Phases	
+					Imm Feedback for everything
+					Scheduling of Batch work		DONE
+					Dashboard Rich one for the team		
+=====================================================================
+					JENKINS
+
+Container
+=== PID 1 - java
+=========================
+docker run -d java-img java.class		docker attach cont
+						LOG of Java
+==================================================================
+Scheduling in Jenkins
+==================================================================
+When you want to start your JOB?
+======================================
+@fixed time				Build periodically	
+@fixed time BUT if SCM changes		Poll SCM			22
+@If other job r build, build this one.	Build after other projects are built
+@using Script - command line 		Trigger builds remotely (e.g., from scripts)
+@if someone pushes code in SCM		GitHub hook trigger for GITScm polling
+@Build another job after this after job
+=======================================
+https://www.devopsschool.com/blog/how-to-schedule-and-trigger-a-jenkins-job-automatically/
+
+JENKINS_URL/job/RajeshK/job/job3/build?token=TOKEN_NAME or /buildWithParameters?token=TOKEN_NAME
+
+
+http://3.7.55.32:8080/job/RajeshK/job/job3/build?delay=0sec
+
+
+curl -X POST --user devops:11a94fe503cf8055d57d6f25be3c67dfe4 http://3.7.55.32:8080/job/RajeshK/job/job3/build?
+
+http://3.7.55.32:8080/job/RajeshK/job/job3/build?delay=0sec
+
+
+TEST RUN
+If passed 
+	trigger this job
+If failed
+
+
+
+http://3.7.55.32:8080/github-webhook/
+
+
