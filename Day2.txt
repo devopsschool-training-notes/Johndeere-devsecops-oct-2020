@@ -51,4 +51,55 @@ If failed
 
 http://3.7.55.32:8080/github-webhook/
 
+==================================================================================================================
+					Integration of ALL TOOLS	
+					Integration of ALL TEAMS
+					Integration of ALL SDLC Phases	
+
+
+
+
+
+
+PLAN -> CODE -> CodeReview -> Build -> UT -> Package -> Archive -> Deploy -> AT -> Coverage
+===========================================================================================
+JIRA -> GIT   -> SonarQube -> Maven  -> Junit -> Jar -> Artifactory -> Ansible -> Selen -> Jacoco
+-----------------------------------------------JENKINS------------------------------------------
+
+NA - 	DONE  ->  DONE  -> DONE   -> DONE -> DONE -> PEND ----> PEND --> PENDING --> PENDING
+------
+RALLY
+=================================================================
+Rules of Jenkins Integ with Any tools?
+---------------------------------------
+Step 1 - Install a Tool plugins
+
+Step 2 - Configure Tool plugins
+
+Step 3 - Use the plugins for integration in JOB. 
+==================================================================
+
+SonarQube
+-----------
+	SonarQube Server
+	http://3.7.55.32:9000/
+	admin
+	admin
+
+	Code
+	https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src
+
+	Scanner
+		in Jenkins
+---------------------
+docker run -d -p 9000:9000 sonarqube
+
+
+Jenkins
+
+target/surefire-reports/
+
+target /
+
+http://3.7.55.32:8080/job/RajeshK/job/Package/lastSuccessfulBuild/artifact/target/yoodle-5.0.0.jar
 
