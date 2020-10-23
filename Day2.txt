@@ -3,9 +3,9 @@ devops
 devops123
 https://www.devopsschool.com/tutorial/jenkins/
 =================================================
-					Integration of ALL TOOLS	
-					Integration of ALL TEAMS
-					Integration of ALL SDLC Phases	
+					Integration of ALL TOOLS		DONE	
+					Integration of ALL TEAMS		DONE
+					Integration of ALL SDLC Phases		DONE
 					Imm Feedback for everything
 					Scheduling of Batch work		DONE
 					Dashboard Rich one for the team		
@@ -52,8 +52,10 @@ If failed
 http://3.7.55.32:8080/github-webhook/
 
 ==================================================================================================================
-					Integration of ALL TOOLS	
+					Integration of ALL TOOLS
+								with jenkins	
 					Integration of ALL TEAMS
+								with jobs
 					Integration of ALL SDLC Phases	
 
 
@@ -102,4 +104,58 @@ target/surefire-reports/
 target /
 
 http://3.7.55.32:8080/job/RajeshK/job/Package/lastSuccessfulBuild/artifact/target/yoodle-5.0.0.jar
+=========================================================
+
+Imm Feedback for everything
+==========================================================================
+		Email
+			Jenkins --> SMTP Server --> YOU
+			
+			Mailer Plugin - Basic
+			Email Extension Plugin - Advance
+		CHAT
+			team
+			jabbar
+			slack
+			skype
+			------------------------------
+			1. install plugins
+			2. configure plugins
+			3. use plugins
+
+		Dashboard	== PIPELINE
+
+	
+PLAN -> CODE -> CodeReview -> Build -> UT -> Package -> Archive -> Deploy -> AT -> Coverage
+===========================================================================================
+JIRA -> GIT   -> SonarQube -> Maven  -> Junit -> Jar -> Artifactory -> Ansible -> Selen -> Jacoco
+-----------------------------------------------JENKINS------------------------------------------	
+
+		How to create a Pipeline?		
+		- Using EXisting Job? - By GUI
+			Build Pipeline Plugins
+		- Using Code? - By Coding
+			Pipeline Plugins
+		https://www.jenkins.io/doc/book/pipeline/
+		https://www.devopsschool.com/blog/devopsschool-github-referenece/
+		Google.com
+
+
+Pipeline
+	jenkinsfile (Groovy DSL lang)
+	- EMBED
+	or
+	- SCM
+
+
+https://github.com/devops-school/helloworld-java-maven
+
+
+
+
+
+
+
+
+
 
