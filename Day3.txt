@@ -109,11 +109,11 @@ What is SonarQube?
 	- Test Quality
 
 	- Platform for
-		--- Multiple Rules
+		--- Multiple Rules							DONE		
 		--- Multiple Rules Sets (Quality Profile)
-		--- Who - when - where - how - what - Bad Code has been done'		
-		--- Historial Reports
-		--- Estimantion for Fixing COde Issues
+		--- Who - when - where - how - what - Bad Code has been done'		DONE		
+		--- Historial Reports							DONE		
+		--- Estimantion for Fixing COde Issues					DONE		
 		--- Notifcation
 		--- Manage multiple Projects Code Quality
 		--- Role Based Access 
@@ -304,7 +304,7 @@ RUN SCANNER ON THE SRC CODE
 ================================
 C:\tools\sonarqube\scanner\sonar-scanner-cli-4.5\bin\sonar-scanner.bat
 
-
+https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src
 
 
 
