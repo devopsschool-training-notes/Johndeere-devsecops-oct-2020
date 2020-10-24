@@ -307,14 +307,52 @@ C:\tools\sonarqube\scanner\sonar-scanner-cli-4.5\bin\sonar-scanner.bat
 https://github.com/devopsschool-demo-labs-projects/java-sonarqube-helloworld-src
 
 
+==================================================================
+==================================================================
+
+What is Code Coverage?
+What is Test Coverage?
+==============================
 
 
+Why this?
+=========================
+
+Code Coverage is NOT Functional TESTING.
+
+How Code Coverage works?
+===================================
+
+Which are the tools for coverage?
+====================================
+Java - Cobertura, Jacoco
+                  -----------
+DOTNET - Ncover
 
 
+Jacoco		-> .EXEC ---> REPORT
+
+Cobertura	-> .ser ---> REPORT
+========================================================
+
+JACOCO --- cODE cOVERAGE --->
+======================================
+	Binary Class of the product
+	Binary class of the test cases
+ ==============================================
+			JVM
+		---- -> .EXEC ---> REPORT
+========================================================
+Jacoco code coverage 
+		using maven
+				using jenkins
 
 
+https://github.com/scmgalaxy/jacoco-maven-unittestv2
 
-
-
+Lab - 
+https://github.com/scmgalaxy/jacoco-maven-unittestv2
+Setup one JOB with jacoco
+=]=========================================
 
 
