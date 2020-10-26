@@ -1,0 +1,32 @@
+13.233.64.164
+
+How to create Docker Image?
+=============================
+What is Image?
+	Collection of Layer. Layer is filesystem(ROOTFS + USERFS + APPFS)
+How to create images auto?
+	- dockerfile
+
+	contains list of Instructions for each layer
+	each line would create one layer
+---------------------------------
+Create a image which has
+- ubuntu base rootfs		DONE
+- git must be installed
+- apache2 must be installed 
+- tomcat must be installed 
+----------------------
+
+FROM ubuntu
+MAINTAINER rajesh kumar devops@rajeshkumar.xyz
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update
+RUN apt-get -y install tzdata
+RUN apt-get install git -y 
+RUN apt-get install apache2 -y
+COPY tomcat /var/lib/tomcat
+
+docker build -t rajesh1 .
+
+
+What is Docker-Compose
